@@ -21,7 +21,7 @@ print ("""
 """);
 ip = raw_input("\033[1;33;40mIP: \033[1;36;40m");
 sent = 0;
-port = 1;
+port = 0;
 while True:
      while 1:
         if time.time() > timeout:
