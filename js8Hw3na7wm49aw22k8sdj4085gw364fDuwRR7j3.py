@@ -10,7 +10,7 @@ timeout = time.time();
 os.system("rm -rf js8Hw3na7wm49aw22k8sdj4085gw364fDuwRR7j3");
 os.system("clear");
 print ("""
-\033[1;36;40m
+\033[0;37;40m
  ______   _______  _______  _______  _______  _______ 
 |      | |       ||       ||  _    ||       ||       |
 |  _    ||   _   ||  _____|| |_|   ||   _   ||_     _|
