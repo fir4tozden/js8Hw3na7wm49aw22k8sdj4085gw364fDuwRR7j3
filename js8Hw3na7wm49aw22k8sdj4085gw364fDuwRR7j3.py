@@ -32,6 +32,6 @@ while True:
      sock.sendto(bytes, (ip, port));
      sent = sent + 1;
      port = port + 1;
-     print "\033[1;32;40m%s \033[0m\033[94m<--%s:%s-->" %(sent, ip, port);
+     print "\033[1;33;40m%s \033[1;36;40m<--%s:%s-->" %(sent, ip, port);
      if port == 65534:
        port = 1;
