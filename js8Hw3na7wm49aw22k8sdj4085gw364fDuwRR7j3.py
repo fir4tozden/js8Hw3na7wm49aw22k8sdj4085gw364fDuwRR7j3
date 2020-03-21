@@ -33,6 +33,6 @@ while True:
      sent = sent + 1;
      port = port + 1;
      # print "\033[1;32;40m%s (%s:%s)" %(sent, ip, port);
-     print("\033[1;32;40m", sent, "\033[0m \033[94m<--", ip, ":", port, "-->");
+     print("\033[1;32;40m",sent,"\033[0m \033[94m<--",ip,":",port,"-->");
      if port == 65534:
        port = 1;
